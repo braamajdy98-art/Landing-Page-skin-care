@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÉLIXIR DE ROSÉE | سيروم إكسير الورد الملكي للعناية الفاخرة</title>
+  <meta name="description" content="سيروم إكسير الورد والنياسيناميد 5% الأصلي لترميم حاجز البشرة وترطيبها بعمق في قطاع غزة. الدفع عند الاستلام مع حق المعاينة والفحص الكامل.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="ÉLIXIR DE ROSÉE | سيروم إكسير الورد الملكي">
+  <meta property="og:description" content="تركيبة سريرية مركزة بالنياسيناميد والسكوالين النقي لترميم البشرة واستعادة نضارتها.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Cairo (UI & Body) & Amiri (Editorial Luxury Serifs) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       Design System & Tokens (Requested Palette)
+       ========================================================================== */
+    :root {
+      --primary-deep: #8E1EA2;      /* البنفسجي الملكي الأساسي للأزرار والعناوين */
+      --orchid: #C654C3;            /* أوركيد نابض للتحويم والحدود النشطة */
+      --petal-pink: #ED96D7;        /* وردي بتلات ناعم للحدود والبطاقات */
+      --soft-blush: #FFC0DE;        /* باستيل وردي فائق النعومة للشارات والخلفيات */
+      
+      --bg-cream: #FDF7FA;          /* خلفية الصفحة الفاخرة */
+      --bg-card: #FFFFFF;           /* بطاقات بيضاء ناصعة لإبراز التباين */
+      --bg-tint: #FFF5FA;           /* تموجات خفيفة للأقسام المتناوبة */
+      
+      --text-main: #2B1829;         /* نصوص رئيسية واضحة ومقروءة */
+      --text-muted: #5C3A5A;        /* نصوص فرعية توضيحية */
+      --text-light: #8A6487;        /* رمادي وردي للتلميحات */
+      
+      --border-subtle: rgba(237, 150, 215, 0.35);
+      --border-focus: #8E1EA2;
+      --shadow-sm: 0 4px 15px rgba(142, 30, 162, 0.06);
+      --shadow-md: 0 10px 30px rgba(142, 30, 162, 0.10);
+      --shadow-lg: 0 18px 45px rgba(142, 30, 162, 0.16);
+      
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 9999px;
+      
+      --font-body: 'Cairo', system-ui, -apple-system, sans-serif;
+      --font-serif: 'Amiri', serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.75;
+      direction: rtl;
+      text-align: right;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ==========================================================================
+       1. شريط الإعلانات العلوي
+       ========================================================================== */
+    .announcement-bar {
+      background: linear-gradient(90deg, #6B117A 0%, var(--primary-deep) 50%, var(--orchid) 100%);
+      color: #FFFFFF;
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 10px 16px;
+      text-align: center;
+      position: relative;
+      z-index: 101;
+    }
+
+    .announcement-bar .badge-glow {
+      background-color: var(--soft-blush);
+      color: var(--primary-deep);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      margin-left: 8px;
+      display: inline-block;
+    }
+
+    /* ==========================================================================
+       2. الهيدر والتنقل الفاخر
+       ========================================================================== */
+    .site-header {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      transition: all 0.3s ease;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .brand-logo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--primary-deep);
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+
+    .brand-sub {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--orchid);
+      letter-spacing: 0.8px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--text-main);
+      transition: color 0.25s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--primary-deep);
+    }
+
+    .btn-header-cta {
+      background: linear-gradient(135deg, var(--primary-deep), var(--orchid));
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 4px 15px rgba(142, 30, 162, 0.22);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-header-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(142, 30, 162, 0.32);
+    }
+
+    /* ==========================================================================
+       3. قسم الـ Hero
+       ========================================================================== */
+    .hero-section {
+      padding: 60px 0 80px;
+      position: relative;
+      background: radial-gradient(circle at 10% 20%, rgba(255, 192, 222, 0.35) 0%, transparent 50%),
+                  radial-gradient(circle at 90% 80%, rgba(237, 150, 215, 0.2) 0%, transparent 45%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFFFFF;
+      border: 1px solid var(--petal-pink);
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      color: var(--primary-deep);
+      font-size: 12.5px;
+      font-weight: 800;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.3;
+      margin-bottom: 18px;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, var(--primary-deep), var(--orchid));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.85;
+      margin-bottom: 26px;
+      max-width: 540px;
+    }
+
+    .hero-specs-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      padding: 16px 0;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 26px;
+    }
+
+    .hero-spec-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .spec-val {
+      font-weight: 800;
+      font-size: 15.5px;
+      color: var(--primary-deep);
+    }
+
+    .spec-lbl {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .hero-price-preview {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .hero-curr-price {
+      font-size: 34px;
+      font-weight: 900;
+      color: var(--primary-deep);
+    }
+
+    .hero-old-price {
+      font-size: 18px;
+      color: var(--text-light);
+      text-decoration: line-through;
+    }
+
+    .hero-save-badge {
+      background: var(--soft-blush);
+      color: var(--primary-deep);
+      font-size: 12px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .btn-main-cta {
+      background: linear-gradient(135deg, var(--primary-deep), var(--orchid));
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 16px 34px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 10px 25px rgba(142, 30, 162, 0.28);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex: 1;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-main-cta:hover {
+      background: linear-gradient(135deg, #6B117A, var(--primary-deep));
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(142, 30, 162, 0.36);
+    }
+
+    .btn-wa-direct {
+      background-color: #25D366;
+      color: #FFFFFF;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 16px 24px;
+      border-radius: var(--radius-pill);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-wa-direct:hover {
+      background-color: #1eb857;
+      transform: translateY(-2px);
+    }
+
+    .hero-trust-indicators {
+      display: flex;
+      gap: 20px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* صورة الـ Hero */
+    .hero-visual-card {
+      position: relative;
+      background: #FFFFFF;
+      border: 2px solid var(--petal-pink);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      border-radius: calc(var(--radius-lg) - 6px);
+      transition: transform 0.6s ease;
+    }
+
+    .hero-visual-card:hover .hero-img {
+      transform: scale(1.025);
+    }
+
+    .floating-pill {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--petal-pink);
+      padding: 12px 18px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      z-index: 2;
+    }
+
+    .floating-pill.top {
+      top: 35px;
+      right: 35px;
+    }
+
+    .floating-pill.bottom {
+      bottom: 35px;
+      left: 35px;
+    }
+
+    .fp-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--primary-deep);
+      display: block;
+      letter-spacing: 0.5px;
+    }
+
+    .fp-text {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    /* ==========================================================================
+       4. المشكلة والحل (Problem vs Solution)
+       ========================================================================== */
+    .section-py {
+      padding: 85px 0;
+    }
+
+    .section-bg-alt {
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-tint) 100%);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .sec-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 50px;
+    }
+
+    .sec-tag {
+      font-size: 12.5px;
+      font-weight: 800;
+      color: var(--primary-deep);
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .sec-title {
+      font-family: var(--font-serif);
+      font-size: 35px;
+      color: var(--text-main);
+      line-height: 1.35;
+      margin-bottom: 14px;
+    }
+
+    .sec-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    .problem-solution-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .ps-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 34px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .ps-card.solution {
+      border: 2px solid var(--orchid);
+      background: radial-gradient(circle at 100% 0%, rgba(255, 192, 222, 0.28) 0%, #FFFFFF 70%);
+    }
+
+    .ps-icon-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+
+    .ps-icon-badge.danger {
+      background: #FEE2E2;
+      color: #DC2626;
+    }
+
+    .ps-icon-badge.success {
+      background: var(--soft-blush);
+      color: var(--primary-deep);
+    }
+
+    .ps-card h3 {
+      font-family: var(--font-serif);
+      font-size: 23px;
+      margin-bottom: 12px;
+      color: var(--text-main);
+    }
+
+    .ps-card p {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.85;
+    }
+
+    /* ==========================================================================
+       5. الفوائد الرئيسية الأربعة (Key Benefits)
+       ========================================================================== */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .benefit-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.35s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--orchid);
+    }
+
+    .benefit-img-box {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+    }
+
+    .benefit-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .benefit-card:hover .benefit-img-box img {
+      transform: scale(1.08);
+    }
+
+    .benefit-body {
+      padding: 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .benefit-body h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .benefit-body p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ==========================================================================
+       6. المكونات النشطة الشفافة (Active Ingredients)
+       ========================================================================== */
+    .ingredients-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .ingredient-card {
+      background: #FFFFFF;
+      border: 1px solid var(--petal-pink);
+      border-radius: var(--radius-md);
+      padding: 26px 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .ingredient-card:hover {
+      border-color: var(--primary-deep);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .ingredient-thumb {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 16px;
+      border: 2px solid var(--soft-blush);
+      box-shadow: 0 4px 10px rgba(142, 30, 162, 0.12);
+    }
+
+    .ingredient-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--primary-deep);
+      background-color: var(--soft-blush);
+      padding: 3px 12px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 10px;
+    }
+
+    .ingredient-name {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .ingredient-role {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       7. خطوات الاستخدام (Ritual & Routine)
+       ========================================================================== */
+    .ritual-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .ritual-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 34px 28px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .ritual-step-num {
+      font-family: var(--font-serif);
+      font-size: 50px;
+      font-weight: 700;
+      color: var(--soft-blush);
+      line-height: 1;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .ritual-card h3 {
+      font-family: var(--font-serif);
+      font-size: 21px;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .ritual-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    /* ==========================================================================
+       8. جدول المقارنة الشفاف (Comparison Matrix)
+       ========================================================================== */
+    .comparison-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: right;
+    }
+
+    .comp-table th, .comp-table td {
+      padding: 18px 24px;
+      border-bottom: 1px solid rgba(237, 150, 215, 0.25);
+      font-size: 14.5px;
+    }
+
+    .comp-table th {
+      background: var(--soft-blush);
+      color: var(--primary-deep);
+      font-weight: 800;
+      font-size: 15px;
+    }
+
+    .comp-table tr.highlight {
+      background: rgba(255, 192, 222, 0.18);
+      font-weight: 700;
+      color: var(--primary-deep);
+    }
+
+    .chk {
+      color: #15803D;
+      font-weight: 800;
+      font-size: 18px;
+      margin-left: 6px;
+    }
+
+    .crs {
+      color: #B91C1C;
+      font-weight: 800;
+      font-size: 18px;
+      margin-left: 6px;
+    }
+
+    /* ==========================================================================
+       9. آراء وتجارب الصبايا (Social Proof)
+       ========================================================================== */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .review-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stars-row {
+      color: #EAB308;
+      font-size: 15px;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+
+    .review-content {
+      font-size: 14px;
+      color: var(--text-main);
+      line-height: 1.85;
+      margin-bottom: 20px;
+    }
+
+    .reviewer-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px dashed var(--border-subtle);
+      padding-top: 14px;
+    }
+
+    .reviewer-pic {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--soft-blush);
+    }
+
+    .rev-name {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    .rev-city {
+      font-size: 12px;
+      color: var(--orchid);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       10. عروض الأسعار ونموذج الطلب لقطاع غزة (COD Form)
+       ========================================================================== */
+    .checkout-wrapper {
+      padding: 85px 0;
+      background: linear-gradient(180deg, var(--bg-cream) 0%, rgba(255, 192, 222, 0.35) 100%);
+    }
+
+    .checkout-container {
+      background: #FFFFFF;
+      border: 2px solid var(--petal-pink);
+      border-radius: var(--radius-lg);
+      padding: 42px;
+      box-shadow: var(--shadow-lg);
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .checkout-columns {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+    }
+
+    .package-picker {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .package-card {
+      border: 2px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      position: relative;
+      background: #FFFFFF;
+    }
+
+    .package-card.active {
+      border-color: var(--primary-deep);
+      background: rgba(255, 192, 222, 0.2);
+    }
+
+    .package-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .package-radio {
+      accent-color: var(--primary-deep);
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    .package-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .package-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .package-price-box {
+      text-align: left;
+    }
+
+    .package-price-num {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--primary-deep);
+    }
+
+    .package-price-old {
+      font-size: 13px;
+      color: var(--text-light);
+      text-decoration: line-through;
+      margin-left: 6px;
+    }
+
+    .package-best-badge {
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: linear-gradient(135deg, var(--primary-deep), var(--orchid));
+      color: #FFFFFF;
+      font-size: 10.5px;
+      font-weight: 800;
+      padding: 3px 12px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 2px 6px rgba(142, 30, 162, 0.25);
+    }
+
+    /* حقول الإدخال */
+    .form-item {
+      margin-bottom: 16px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .input-field, .select-field, .textarea-field {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      outline: none;
+      transition: all 0.25s ease;
+    }
+
+    .input-field:focus, .select-field:focus, .textarea-field:focus {
+      border-color: var(--primary-deep);
+      background-color: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(142, 30, 162, 0.12);
+    }
+
+    .invoice-summary {
+      background: var(--bg-cream);
+      border: 1px solid var(--petal-pink);
+      border-radius: var(--radius-md);
+      padding: 24px;
+    }
+
+    .inv-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: var(--text-muted);
+    }
+
+    .inv-row.total {
+      border-top: 1.5px dashed var(--petal-pink);
+      padding-top: 14px;
+      margin-top: 14px;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--primary-deep);
+    }
+
+    .btn-submit-checkout {
+      width: 100%;
+      background: linear-gradient(135deg, var(--primary-deep), var(--orchid));
+      color: #FFFFFF;
+      border: none;
+      padding: 17px;
+      border-radius: var(--radius-pill);
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      margin-top: 18px;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 22px rgba(142, 30, 162, 0.25);
+    }
+
+    .btn-submit-checkout:hover {
+      background: linear-gradient(135deg, #6B117A, var(--primary-deep));
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(142, 30, 162, 0.35);
+    }
+
+    .checkout-guarantees {
+      margin-top: 20px;
+      list-style: none;
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+
+    .checkout-guarantees li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    /* ==========================================================================
+       11. الأسئلة الشائعة (Interactive FAQ Accordion)
+       ========================================================================== */
+    .faq-wrapper {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      margin-bottom: 14px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .faq-header {
+      width: 100%;
+      padding: 22px 26px;
+      text-align: right;
+      background: none;
+      border: none;
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .faq-header .arrow {
+      color: var(--primary-deep);
+      font-size: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 26px;
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.85;
+    }
+
+    .faq-item.active .faq-content {
+      max-height: 250px;
+      padding-bottom: 24px;
+    }
+
+    .faq-item.active .arrow {
+      transform: rotate(180deg);
+    }
+
+    /* ==========================================================================
+       12. شريط الطمأنينة النهائي (Closing CTA)
+       ========================================================================== */
+    .closing-card {
+      background: linear-gradient(135deg, #6B117A 0%, var(--primary-deep) 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 55px 40px;
+      text-align: center;
+      margin-top: 40px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .closing-card h2 {
+      font-family: var(--font-serif);
+      font-size: 34px;
+      margin-bottom: 12px;
+      color: var(--soft-blush);
+    }
+
+    .closing-card p {
+      font-size: 15.5px;
+      max-width: 620px;
+      margin: 0 auto 26px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .btn-closing {
+      background-color: #FFFFFF;
+      color: var(--primary-deep);
+      font-size: 16px;
+      font-weight: 800;
+      padding: 15px 40px;
+      border-radius: var(--radius-pill);
+      display: inline-block;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+    }
+
+    .btn-closing:hover {
+      background-color: var(--soft-blush);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       13. الفوتر (Footer)
+       ========================================================================== */
+    .site-footer {
+      background-color: #1A0D1B;
+      color: #FFFFFF;
+      padding: 55px 0 35px;
+      margin-top: 75px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+      margin-bottom: 45px;
+    }
+
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      color: var(--soft-blush);
+      margin-bottom: 12px;
+    }
+
+    .footer-about {
+      font-size: 13.5px;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.85;
+      max-width: 420px;
+    }
+
+    .footer-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--petal-pink);
+      margin-bottom: 16px;
+    }
+
+    .footer-list {
+      list-style: none;
+      font-size: 13px;
+    }
+
+    .footer-list li {
+      margin-bottom: 9px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-copyright {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 22px;
+      text-align: center;
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* ==========================================================================
+       14. شريط الهاتف السفلي المثبت (Sticky Mobile CTA Bar)
+       ========================================================================== */
+    .mobile-sticky-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.98);
+      border-top: 1px solid var(--border-subtle);
+      padding: 12px 18px;
+      box-shadow: 0 -5px 25px rgba(142, 30, 162, 0.12);
+      z-index: 99;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .msb-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .msb-name {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .msb-price {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--primary-deep);
+    }
+
+    .msb-button {
+      background: linear-gradient(135deg, var(--primary-deep), var(--orchid));
+      color: #FFFFFF;
+      padding: 11px 26px;
+      border-radius: var(--radius-pill);
+      font-size: 14px;
+      font-weight: 800;
+      border: none;
+    }
+
+    /* ==========================================================================
+       Responsive Breakpoints
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-desc {
+        margin: 0 auto 26px;
+      }
+      .hero-specs-row {
+        max-width: 480px;
+        margin: 0 auto 26px;
+      }
+      .hero-price-preview, .hero-trust-indicators {
+        justify-content: center;
+      }
+      .hero-actions {
+        max-width: 460px;
+        margin: 0 auto 20px;
+      }
+      .benefits-grid, .ingredients-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .problem-solution-grid, .ritual-grid, .reviews-grid, .checkout-columns, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+      .mobile-sticky-bar {
+        display: flex;
+      }
+      body {
+        padding-bottom: 74px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: 32px;
+      }
+      .hero-img {
+        height: 360px;
+      }
+      .hero-specs-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        text-align: right;
+      }
+      .hero-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+      .btn-main-cta, .btn-wa-direct {
+        width: 100%;
+      }
+      .benefits-grid, .ingredients-grid {
+        grid-template-columns: 1fr;
+      }
+      .checkout-container {
+        padding: 24px 18px;
+      }
+      .floating-pill {
+        padding: 8px 12px;
+      }
+      .floating-pill.top {
+        top: 20px;
+        right: 20px;
+      }
+      .floating-pill.bottom {
+        bottom: 20px;
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================= -->
+  <!-- 1. شريط الإعلانات العلوي                                                  -->
+  <!-- ========================================================================= -->
+  <aside class="announcement-bar" role="region" aria-label="شريط الإعلانات">
+    <div class="container">
+      <span class="badge-glow">توصيل سريع</span>
+      <span>✨ توصيل سريع لكافة مناطق قطاع غزة | الدفع عند الاستلام مع حق المعاينة والفحص الكامل ₪</span>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 2. الهيدر والتنقل                                                         -->
+  <!-- ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" aria-label="الرئيسية - إكسير الورد">
+        <span class="brand-title">ÉLIXIR DE ROSÉE</span>
+        <span class="brand-sub">سيروم إكسير الورد الملكي &bull; قطاع غزة</span>
+      </a>
+
+      <nav class="nav-links" aria-label="روابط الموقع">
+        <a href="#benefits" class="nav-link">المميزات</a>
+        <a href="#ingredients" class="nav-link">المكونات</a>
+        <a href="#ritual" class="nav-link">طريقة الاستخدام</a>
+        <a href="#reviews" class="nav-link">تجارب الصبايا</a>
+        <a href="#faq" class="nav-link">الأسئلة الشائعة</a>
+      </nav>
+
+      <div>
+        <a href="#order-now" class="btn-header-cta">
+          <span>اطلبي الآن</span>
+          <span>✦</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================= -->
+    <!-- 3. قسم الـ Hero الرئيسي                                                   -->
+    <!-- ========================================================================= -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- نصوص القيمة الترويجية -->
+          <div>
+            <div class="pill-badge">
+              <span>✦</span> تركيبة صيدلانية بالنياسيناميد والسكوالين النقي
+            </div>
+
+            <h1 class="hero-title">
+              استعيدي نضارة بشرتكِ وحيويتها <br>
+              مع <span>سيروم إكسير الورد الملكي</span>
+            </h1>
+
+            <p class="hero-desc">
+              سيروم سريري مركز يعيد بناء حاجز البشرة المتضرر بفعل مياه الصنبور وتغير المناخ في قطاع غزة، ويمنحكِ ترطيباً عميقاً وإشراقة زجاجية فورية دون أي ملمس لزج أو تحسس.
+            </p>
+
+            <div class="hero-specs-row">
+              <div class="hero-spec-item">
+                <span class="spec-val">ترطيب 48 ساعة</span>
+                <span class="spec-lbl">بحمض الهيالورونيك الرباعي</span>
+              </div>
+              <div class="hero-spec-item">
+                <span class="spec-val">5% نياسيناميد نقي</span>
+                <span class="spec-lbl">لتوحيد اللون وتضييق المسام</span>
+              </div>
+              <div class="hero-spec-item">
+                <span class="spec-val">خالٍ من العطور</span>
+                <span class="spec-lbl">مختبر للبشرة الحساسة</span>
+              </div>
+            </div>
+
+            <div class="hero-price-preview">
+              <span class="hero-curr-price">75 ₪</span>
+              <span class="hero-old-price">95 ₪</span>
+              <span class="hero-save-badge">توفير فوري 20 ₪</span>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#order-now" class="btn-main-cta">
+                <span>احجزي طلبكِ الآن (الدفع عند الاستلام)</span>
+              </a>
+              <a href="https://wa.me/970590000000?text=مرحباً%D8%8C%20أريد%20الاستفسار%20عن%20سيروم%20إكسير%20الورد%20الملكي" target="_blank" rel="noopener noreferrer" class="btn-wa-direct">
+                <span>طلب عبر واتساب 💬</span>
+              </a>
+            </div>
+
+            <div class="hero-trust-indicators">
+              <span>🛡️ المعاينة والفحص متاحة قبل الدفع</span>
+              <span>📦 تسليم سريع خلال 24 - 48 ساعة</span>
+            </div>
+          </div>
+
+          <!-- الصورة الفوتوغرافية للمنتج -->
+          <div>
+            <div class="hero-visual-card">
+              <img 
+                src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=900&q=80" 
+                alt="قارورة سيروم إكسير الورد الملكي الفاخرة" 
+                class="hero-img"
+              >
+
+              <div class="floating-pill top">
+                <span class="fp-tag">جودة صيدلانية</span>
+                <span class="fp-text">مستخلص الورد الجوري والسكوالين</span>
+              </div>
+
+              <div class="floating-pill bottom">
+                <span class="fp-tag">القوام</span>
+                <span class="fp-text">مخملي خفيف فائق الامتصاص</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. المشكلة والحل (Problem vs Solution)                                    -->
+    <!-- ========================================================================= -->
+    <section class="section-py section-bg-alt">
+      <div class="container">
+        
+        <div class="sec-header">
+          <span class="sec-tag">تحديات البشرة في غزة</span>
+          <h2 class="sec-title">لماذا تعاني بشرتكِ من الجفاف والبهتان المستمر؟</h2>
+          <p class="sec-desc">
+            طبيعة المياه العسرة، والغبار اليومي، وتقلبات المناخ تستنزف طبقة السيراميد الطبيعية للبشرة، مما يؤدي لجفاف حاجز الرطوبة وظهور القشور والبهتان والاحمرار المستمر.
+          </p>
+        </div>
+
+        <div class="problem-solution-grid">
+          <div class="ps-card">
+            <div class="ps-icon-badge danger">✕</div>
+            <h3>المرطبات التجارية العادية</h3>
+            <p>
+              تكتفي بصنع طبقة عازلة مؤقتة تعتمد على البارافين والمشتقات الثقيلة، مما يسد المسام دون معالجة الجفاف العميق، وسرعان ما يتلاشى أثرها بعد الغسيل لتعود البشرة للجفاف والتقشر.
+            </p>
+          </div>
+
+          <div class="ps-card solution">
+            <div class="ps-icon-badge success">✓</div>
+            <h3>حل سيروم إكسير الورد الملكي</h3>
+            <p>
+              يدمج جزيئات السكوالين النباتية المتناهية الصغر مع النياسيناميد النقي ومستخلص السيكا، ليعيد بناء جدار البشرة من الداخل، ويحبس الرطوبة لمدة 48 ساعة دون أي لمعان دهني.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. مميزات المنتج الأربعة (Key Benefits)                                    -->
+    <!-- ========================================================================= -->
+    <section id="benefits" class="section-py">
+      <div class="container">
+        
+        <div class="sec-header">
+          <span class="sec-tag">فاعلية مدروسة</span>
+          <h2 class="sec-title">أربعة أسباب تجعل إكسير الورد خياركِ اليومي</h2>
+          <p class="sec-desc">عناية تمنحكِ بشرة ناعمة ونضرة ومحمية من أول أسبوع استخدام</p>
+        </div>
+
+        <div class="benefits-grid">
+          
+          <div class="benefit-card">
+            <div class="benefit-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1608248597359-009772594a10?auto=format&fit=crop&w=600&q=80" 
+                alt="قوام سيروم العناية بالبشرة" 
+              >
+            </div>
+            <div class="benefit-body">
+              <h3>ترميم حاجز البشرة الحساسة</h3>
+              <p>يعالج علامات الإجهاد والخشونة الناتجة عن مياه الغسيل بفضل مركب السيراميد المعزز والسيكا المهدئة.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" 
+                alt="إشراقة ونضارة البشرة" 
+              >
+            </div>
+            <div class="benefit-body">
+              <h3>توحيد اللون وتفتيح طبيعي</h3>
+              <p>5% نياسيناميد صيدلاني يقلل مظهر التصبغات وآثار الحبوب السطحية ليمنح الوجه إشراقة متجانسة.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" 
+                alt="تطبيق السيروم على البشرة" 
+              >
+            </div>
+            <div class="benefit-body">
+              <h3>تضييق المسام وتنظيم الإفرازات</h3>
+              <p>يساعد على ضبط لمعان منطقة T-Zone دون تجفيف الخدين، ليمنحكِ ملمساً حريرياً متوازناً طوال اليوم.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" 
+                alt="مظهر البشرة الزجاجية المتألقة" 
+              >
+            </div>
+            <div class="benefit-body">
+              <h3>قاعدة مثالية قبل المكياج</h3>
+              <p>يعمل كبرايمر مغذٍ يمنع تكتل أو تقشر كريم الأساس والبودرة، لتحصلي على مظهر البشرة الزجاجية الطبيعي.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 6. المكونات النشطة الشفافة (Active Ingredients)                            -->
+    <!-- ========================================================================= -->
+    <section id="ingredients" class="section-py section-bg-alt">
+      <div class="container">
+        
+        <div class="sec-header">
+          <span class="sec-tag">شفافية التركيبة</span>
+          <h2 class="sec-title">مكونات نشطة بنسب مثبتة سريرياً</h2>
+          <p class="sec-desc">خالٍ تماماً من الكحول الجافة، والبارابين، والزيوت المعدنية التي تسد المسام</p>
+        </div>
+
+        <div class="ingredients-grid">
+          
+          <div class="ingredient-card">
+            <img 
+              src="https://images.unsplash.com/photo-1556228722-d0b71e16f73a?auto=format&fit=crop&w=300&q=80" 
+              alt="ماء الورد الدمشقي المركز" 
+              class="ingredient-thumb"
+            >
+            <span class="ingredient-badge">مقطر طبيعي</span>
+            <h4 class="ingredient-name">ماء الورد الدمشقي</h4>
+            <p class="ingredient-role">يهدئ الاحمرار وينعش خلايا البشرة ويضبط توازن حموضتها الطبيعي بعد الغسول.</p>
+          </div>
+
+          <div class="ingredient-card">
+            <img 
+              src="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=300&q=80" 
+              alt="نياسيناميد نقي 5%" 
+              class="ingredient-thumb"
+            >
+            <span class="ingredient-badge">تركيز 5%</span>
+            <h4 class="ingredient-name">النياسيناميد (فيتامين B3)</h4>
+            <p class="ingredient-role">يقوي بناء السيراميد، يقلل من اتساع المسام، ويساعد في توحيد درجات لون البشرة بلطف.</p>
+          </div>
+
+          <div class="ingredient-card">
+            <img 
+              src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=300&q=80" 
+              alt="سكوالين الزيتون النباتي" 
+              class="ingredient-thumb"
+            >
+            <span class="ingredient-badge">100% نباتي</span>
+            <h4 class="ingredient-name">سكوالين الزيتون</h4>
+            <p class="ingredient-role">يحاكي دهون البشرة تماماً ليمنع تبخر الماء الداخلي ويمنح نعومة فورية دون أدنى دهنية.</p>
+          </div>
+
+          <div class="ingredient-card">
+            <img 
+              src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=300&q=80" 
+              alt="نبات السنتيلا آسياتيكا سيكا" 
+              class="ingredient-thumb"
+            >
+            <span class="ingredient-badge">سيكا مهدئة</span>
+            <h4 class="ingredient-name">سنتيلا آسياتيكا</h4>
+            <p class="ingredient-role">خلاصة عشبية علاجية معروفة بقدرتها على تهدئة تهيج الجلد وتحفيز الترميم الخلوي السريع.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 7. خطوات الاستخدام (Ritual & Routine)                                     -->
+    <!-- ========================================================================= -->
+    <section id="ritual" class="section-py">
+      <div class="container">
+        
+        <div class="sec-header">
+          <span class="sec-tag">طقس الاستخدام اليومي</span>
+          <h2 class="sec-title">3 خطوات بسيطة لنتائج مثالية</h2>
+          <p class="sec-desc">3 إلى 4 قطرات فقط صباحاً ومساءً تكفي لتغطية الوجه والرقبة بالكامل</p>
+        </div>
+
+        <div class="ritual-grid">
+          <div class="ritual-card">
+            <span class="ritual-step-num">01</span>
+            <h3>تنظيف وتجهيز البشرة</h3>
+            <p>اغسلي وجهكِ بغسولكِ المفضل، واتركي البشرة رطبة وندية قليلاً لزيادة فعالية امتصاص جزيئات الهيالورونيك.</p>
+          </div>
+
+          <div class="ritual-card">
+            <span class="ritual-step-num">02</span>
+            <h3>تطبيق السيروم المخملي</h3>
+            <p>ضعي 3 قطرات على راحة اليد ووزعيها برفق بحركات تصاعدية على الوجه والرقبة حتى يتم امتصاصه تماماً خلال ثوانٍ.</p>
+          </div>
+
+          <div class="ritual-card">
+            <span class="ritual-step-num">03</span>
+            <h3>تثبيت الترطيب</h3>
+            <p>أتبعيه بكريم الترطيب اليومي لحبس المكونات الفعالة، ولا تنسي تطبيق واقي الشمس صباحاً لحماية النضارة المكتسبة.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 8. جدول المقارنة الشفاف                                                  -->
+    <!-- ========================================================================= -->
+    <section class="section-py section-bg-alt">
+      <div class="container">
+        
+        <div class="sec-header">
+          <span class="sec-tag">المقارنة الواقعية</span>
+          <h2 class="sec-title">لماذا يفضل أطباء الجلدية تركيبتنا؟</h2>
+          <p class="sec-desc">مقارنة واضحة توضح الفارق بين إكسير الورد الملكي والمنتجات التجارية الشائعة</p>
+        </div>
+
+        <div class="comparison-wrapper">
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>الميزة / الخاصية</th>
+                <th>سيروم إكسير الورد الملكي</th>
+                <th>المرطبات التجارية العادية</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight">
+                <td>نوع القاعدة والتركيبة</td>
+                <td><span class="chk">✓</span> مائية خفيفة سريعة الامتصاص 100%</td>
+                <td><span class="crs">✕</span> تعتمد على الفازلين والزيوت المعدنية الثقيلة</td>
+              </tr>
+              <tr>
+                <td>الأمان للبشرة الحساسة</td>
+                <td><span class="chk">✓</span> خالٍ تماماً من العطور الصناعية والبارابين</td>
+                <td><span class="crs">✕</span> تحتوي على معطرات قد تسبب تهيج البشرة</td>
+              </tr>
+              <tr class="highlight">
+                <td>عمق تأثير الترطيب</td>
+                <td><span class="chk">✓</span> جزيئات هيالورونيك رباعية تخترق لعمق البشرة</td>
+                <td><span class="crs">✕</span> ترطيب سطحي فقط يزول بعد أول غسيل</td>
+              </tr>
+              <tr>
+                <td>حق المعاينة والضمان</td>
+                <td><span class="chk">✓</span> فحص الطرد والتأكد مع المندوب قبل دفع الشيكل</td>
+                <td><span class="crs">✕</span> شراء مجهول بدون إمكانية الفحص أو الاستبدال</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 9. آراء وتجارب الصبايا (Social Proof)                                     -->
+    <!-- ========================================================================= -->
+    <section id="reviews" class="section-py">
+      <div class="container">
+        
+        <div class="sec-header">
+          <span class="sec-tag">تجارب الصبايا</span>
+          <h2 class="sec-title">تجارب حقيقية من مدن ومخيمات قطاع غزة</h2>
+          <p class="sec-desc">آراء صبايا استخدمن السيروم واستعدن نضارة وصحة بشرتهن</p>
+        </div>
+
+        <div class="reviews-grid">
+          
+          <div class="review-card">
+            <div>
+              <div class="stars-row">★★★★★</div>
+              <p class="review-content">
+                "المي عنا بخان يونس نشفت بشرتي كتير وصار عندي تقشر عند الخدود.. أسبوعين من استخدام سيروم الورد ووجهي رجع ناعم ومورد، وحتى كريم الأساس صار يثبت بدون ما يخطط!"
+              </p>
+            </div>
+            <div class="reviewer-info">
+              <img 
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" 
+                alt="صورة العميلة منى الأسطل" 
+                class="reviewer-pic"
+              >
+              <div>
+                <div class="rev-name">منى الأسطل</div>
+                <div class="rev-city">خان يونس - البلد</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="stars-row">★★★★★</div>
+              <p class="review-content">
+                "أهم نقطة إنه خفيف جداً وما فيه عطر يوجع الرأس أو يحسس البشرة، والمندوب كان محترم وخلاني أشوف العلبة قبل ما أدفع. منتج فخم وتغليف طبي ممتاز بيستاهل كل شيكل."
+              </p>
+            </div>
+            <div class="reviewer-info">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
+                alt="صورة العميلة هدى النجار" 
+                class="reviewer-pic"
+              >
+              <div>
+                <div class="rev-name">هدى النجار</div>
+                <div class="rev-city">دير البلح</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="stars-row">★★★★★</div>
+              <p class="review-content">
+                "طلبت عرض العبوتين مع التوصيل المجاني، النياسيناميد خفف المسام عندي بشكل ملحوظ والسكوالين عطى بشرتي لمعة صحية بتجنن. التوصيل كان سريع جداً واستلمت الطلب بتاني يوم."
+              </p>
+            </div>
+            <div class="reviewer-info">
+              <img 
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" 
+                alt="صورة العميلة رانيا خليل" 
+                class="reviewer-pic"
+              >
+              <div>
+                <div class="rev-name">رانيا خليل</div>
+                <div class="rev-city">مدينة غزة</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 10. نموذج حجز العرض والطلب المباشر بالشيكل (COD Gaza Form)                -->
+    <!-- ========================================================================= -->
+    <section id="order-now" class="checkout-wrapper">
+      <div class="container">
+        
+        <div class="checkout-container">
+          <div class="sec-header" style="margin-bottom: 28px;">
+            <span class="sec-tag">الدفع عند الاستلام مع المعاينة</span>
+            <h2 class="sec-title" style="font-size: 28px;">احجزي طلبكِ الآن بكل سهولة</h2>
+            <p class="sec-desc">املئي بيانات التوصيل أدناه ليتم تجهيز طردكِ وإرساله مع المندوب فوراً</p>
+          </div>
+
+          <form id="gazaOrderForm" onsubmit="handleGazaCheckout(event)">
+            <div class="checkout-columns">
+              
+              <!-- اختيار الباقة والبيانات الأساسية -->
+              <div>
+                <label class="form-label">اختاري العرض المناسب لكِ:</label>
+                <div class="package-picker">
+                  
+                  <!-- باقة 1 -->
+                  <div class="package-card" onclick="selectPackage(1, 75, 10, 'عبوة واحدة (30 مل)')">
+                    <div class="package-left">
+                      <input type="radio" name="orderPkg" id="pkg_1" class="package-radio" value="1">
+                      <div>
+                        <div class="package-title">عبوة واحدة (30 مل)</div>
+                        <div class="package-sub">تكفي 6 - 8 أسابيع من الاستخدام المنتظم</div>
+                      </div>
+                    </div>
+                    <div class="package-price-box">
+                      <span class="package-price-num">75 ₪</span>
+                    </div>
+                  </div>
+
+                  <!-- باقة 2: الأكثر طلباً وتوفيراً -->
+                  <div class="package-card active" onclick="selectPackage(2, 130, 0, 'عرض التوفير عبوتين (توصيل مجاني + هدية)')">
+                    <span class="package-best-badge">الأكثر طلباً — وفري 20 ₪ + توصيل مجاني</span>
+                    <div class="package-left">
+                      <input type="radio" name="orderPkg" id="pkg_2" class="package-radio" value="2" checked>
+                      <div>
+                        <div class="package-title">عبوتين (عرض العناية المتكاملة)</div>
+                        <div class="package-sub">توصيل مجاني لكافة مناطق القطاع + هدية مقشر طبيعي</div>
+                      </div>
+                    </div>
+                    <div class="package-price-box">
+                      <span class="package-price-old">150 ₪</span>
+                      <span class="package-price-num">130 ₪</span>
+                    </div>
+                  </div>
+
+                  <!-- باقة 3: العرض العائلي -->
+                  <div class="package-card" onclick="selectPackage(3, 180, 0, 'الباقة العائلية 3 عبوات (توصيل مجاني)')">
+                    <div class="package-left">
+                      <input type="radio" name="orderPkg" id="pkg_3" class="package-radio" value="3">
+                      <div>
+                        <div class="package-title">3 عبوات (الباقة العائلية والتوفير الأكبر)</div>
+                        <div class="package-sub">توصيل مجاني فوري لكافة المناطق</div>
+                      </div>
+                    </div>
+                    <div class="package-price-box">
+                      <span class="package-price-old">225 ₪</span>
+                      <span class="package-price-num">180 ₪</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="form-item">
+                  <label class="form-label" for="userName">الاسم الكريم بالكامل *</label>
+                  <input type="text" id="userName" class="input-field" placeholder="مثال: ياسمين الأسطل" required>
+                </div>
+
+                <div class="form-item">
+                  <label class="form-label" for="userPhone">رقم الجوال أو الواتساب للتواصل والتنسيق *</label>
+                  <input type="tel" id="userPhone" class="input-field" placeholder="059xxxxxxx أو 056xxxxxxx" required>
+                </div>
+              </div>
+
+              <!-- اختيار المحافظة والعنوان وملخص الفاتورة -->
+              <div>
+                <div class="form-item">
+                  <label class="form-label" for="userRegion">المحافظة / المدينة في قطاع غزة *</label>
+                  <select id="userRegion" class="select-field" required onchange="renderInvoice()">
+                    <option value="" disabled selected>اختاري منطقتكِ في القطاع</option>
+                    <option value="خان يونس">محافظة خان يونس (البلد، المعسكر، القرارة، بني سهيلا، المواصي)</option>
+                    <option value="دير البلح والوسطى">دير البلح والوسطى (البلد، الحكر، النصيرات، البريج، الزوايدة)</option>
+                    <option value="مدينة غزة">مدينة غزة (الرمال، النصر، تل الهوا، الشيخ رضوان، الصبرة)</option>
+                    <option value="رفح">محافظة رفح (البلد، تل السلطان، الشابورة، الجنينة)</option>
+                    <option value="شمال غزة">شمال قطاع غزة (جباليا، بيت لاهيا، بيت حانون)</option>
+                  </select>
+                </div>
+
+                <div class="form-item">
+                  <label class="form-label" for="userAddress">العنوان بالتفصيل أو أقرب معلم معروف *</label>
+                  <textarea id="userAddress" class="textarea-field" rows="2" placeholder="المنطقة، الشارع، بالقرب من صيدلية أو مدرسة معروفة..." required></textarea>
+                </div>
+
+                <!-- فاتورة الحساب بالشيكل -->
+                <div class="invoice-summary">
+                  <div class="inv-row">
+                    <span>قيمة المنتجات:</span>
+                    <span id="txtSubtotal">130 ₪</span>
+                  </div>
+                  <div class="inv-row">
+                    <span>رسوم التوصيل:</span>
+                    <span id="txtShipping" style="color: #15803D; font-weight: 700;">مجاناً (مع هذا العرض)</span>
+                  </div>
+                  <div class="inv-row total">
+                    <span>المجموع عند الاستلام:</span>
+                    <span id="txtTotal">130 ₪</span>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-submit-checkout" id="submitOrderBtn">
+                  تأكيد الطلب الآن (الدفع عند الاستلام ₪)
+                </button>
+
+                <ul class="checkout-guarantees">
+                  <li>✓ حق معاينة وفحص الطرد مع المندوب قبل تسليم المبلغ.</li>
+                  <li>✓ التوصيل سريع خلال 24 إلى 48 ساعة لكافة مناطق القطاع.</li>
+                  <li>✓ يتصل بكِ المندوب هاتفياً لتحديد الوقت الأنسب لكِ بدقة.</li>
+                </ul>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 11. الأسئلة الشائعة (Interactive FAQ Accordion)                           -->
+    <!-- ========================================================================= -->
+    <section id="faq" class="section-py">
+      <div class="container">
+        
+        <div class="sec-header">
+          <span class="sec-tag">إجابات واضحة ومباشرة</span>
+          <h2 class="sec-title">الأسئلة الأكثر شيوعاً</h2>
+          <p class="sec-desc">كل ما تحتاجين لمعرفته حول منتج إكسير الورد والتوصيل داخل قطاع غزة</p>
+        </div>
+
+        <div class="faq-wrapper">
+          
+          <div class="faq-item active">
+            <button class="faq-header" type="button" onclick="toggleFaq(this)">
+              <span>كيف أضمن حقي في فحص العبوة قبل دفع الشيكل؟</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-content">
+              مندوبنا المعتمد يتيح لكِ فتح طرد الشحن الخارجي والتأكد من سلامة كرتونة المنتج والقارورة الأصلية ومطابقتها للمواصفات المعروضة هنا بالكامل قبل تسليم المبلغ المالي للمندوب.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" type="button" onclick="toggleFaq(this)">
+              <span>هل السيروم مناسب للبشرة التي تعاني من حب الشباب والمسام؟</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-content">
+              نعم بالتأكيد، النياسيناميد النقي بتركيز 5% مع السنتيلا آسياتيكا يساعد في تهدئة التهابات الحبوب وتضييق المسام وتنظيم إفراز الزيوت دون التسبب في انسداد المسام (Non-comedogenic).
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" type="button" onclick="toggleFaq(this)">
+              <span>كم تكفي العبوة الواحدة وما هي مدة الصلاحية؟</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-content">
+              حجم العبوة 30 مل، وباستخدام 3 إلى 4 قطرات مرتين يومياً تكفي القارورة من 6 إلى 8 أسابيع كاملة. مدة صلاحية المنتج سنتان من تاريخ الإنتاج المطبوع على القارورة.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" type="button" onclick="toggleFaq(this)">
+              <span>هل السيروم آمن أثناء فترات الحمل أو الرضاعة؟</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-content">
+              نعم، تركيبتنا خالية من مشتقات الرتينول القاسية وخالية من أحماض التقشير العنيفة والبارابين والعطور الكيميائية، مما يجعلها لطيفة وآمنة للاستخدام اليومي.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 12. شريط الطمأنينة النهائي (Closing CTA)                                   -->
+    <!-- ========================================================================= -->
+    <section class="container">
+      <div class="closing-card">
+        <h2>بشرتكِ تستحق العناية الصيدلانية الأفضل</h2>
+        <p>استفيدي من عرض العبوتين اليوم مع شحن مجاني لكافة مناطق ومخيمات قطاع غزة وحق المعاينة الكاملة عند الباب.</p>
+        <a href="#order-now" class="btn-closing">اطلبي عبوتكِ الآن بـ 75 ₪ فقط ✦</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 13. شريط الهاتف السفلي المثبت (Sticky Mobile Bar)                         -->
+  <!-- ========================================================================= -->
+  <aside class="mobile-sticky-bar" aria-label="شريط الشراء السريع للجوال">
+    <div class="msb-details">
+      <span class="msb-name">سيروم إكسير الورد الملكي</span>
+      <span class="msb-price" id="mobileStickyPriceText">130 ₪ (عرض عبوتين)</span>
+    </div>
+    <a href="#order-now" class="msb-button">اطلبي الآن ✦</a>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 14. الفوتر                                                               -->
+  <!-- ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <div class="footer-brand">ÉLIXIR DE ROSÉE</div>
+          <p class="footer-about">
+            علامة رائدة في تقديم مستحضرات العناية الفاخرة بتركيبات طبية آمنة ومدروسة. نفتخر بتقديم تجربة تسوق موثوقة داخل قطاع غزة مع أسرع خدمة توصيل وضمان المعاينة قبل الدفع.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">خدمة العملاء</h4>
+          <ul class="footer-list">
+            <li>واتساب: 0590000000</li>
+            <li>ساعات العمل: يومياً من 9:00 ص حتى 10:00 م</li>
+            <li>التوصيل: كافة مناطق ومحافظات قطاع غزة</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">سياسات وضمانات الشراء</h4>
+          <ul class="footer-list">
+            <li>الدفع عند الاستلام بالشيكل (₪)</li>
+            <li>حق فحص ومعاينة المنتج مع المندوب</li>
+            <li>استبدال فوري في حال وجود أي ضرر أثناء الشحن</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-copyright">
+        جميع الحقوق محفوظة &copy; 2026 ÉLIXIR DE ROSÉE للعناية الفاخرة - قطاع غزة.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- 15. كود الجافاسكريبت التفاعلي (Vanilla JS)                               -->
+  <!-- ========================================================================= -->
+  <script>
+    // حالة الطلب الحالية
+    let state = {
+      qty: 2,
+      price: 130,
+      shipping: 0,
+      title: "عرض التوفير عبوتين (توصيل مجاني + هدية مقشر)"
+    };
+
+    // تغيير الباقة المختارة وتحديث الفاتورة
+    function selectPackage(qty, price, shipping, title) {
+      state.qty = qty;
+      state.price = price;
+      state.shipping = shipping;
+      state.title = title;
+
+      const cards = document.querySelectorAll('.package-card');
+      cards.forEach(c => c.classList.remove('active'));
+
+      if (qty === 1) {
+        cards[0].classList.add('active');
+        document.getElementById('pkg_1').checked = true;
+      } else if (qty === 2) {
+        cards[1].classList.add('active');
+        document.getElementById('pkg_2').checked = true;
+      } else {
+        cards[2].classList.add('active');
+        document.getElementById('pkg_3').checked = true;
+      }
+
+      renderInvoice();
+    }
+
+    // تحديث عرض الفاتورة بالشيكل والشريط السفلي للجوال
+    function renderInvoice() {
+      const subtotalEl = document.getElementById('txtSubtotal');
+      const shippingEl = document.getElementById('txtShipping');
+      const totalEl = document.getElementById('txtTotal');
+      const mobileStickyEl = document.getElementById('mobileStickyPriceText');
+
+      subtotalEl.textContent = `${state.price} ₪`;
+
+      if (state.shipping === 0) {
+        shippingEl.innerHTML = '<span style="color: #15803D; font-weight:700;">مجاناً (مع هذا العرض)</span>';
+      } else {
+        shippingEl.textContent = `${state.shipping} ₪`;
+      }
+
+      const grandTotal = state.price + state.shipping;
+      totalEl.textContent = `${grandTotal} ₪`;
+
+      if (mobileStickyEl) {
+        const pkgShortName = state.qty === 1 ? 'عبوة واحدة' : (state.qty === 2 ? 'عرض عبوتين' : '3 عبوات');
+        mobileStickyEl.textContent = `${grandTotal} ₪ (${pkgShortName})`;
+      }
+    }
+
+    // فتح وإغلاق بطاقات الأكورديون
+    function toggleFaq(btn) {
+      const parent = btn.parentElement;
+      const allItems = document.querySelectorAll('.faq-item');
+
+      allItems.forEach(item => {
+        if (item !== parent) item.classList.remove('active');
+      });
+
+      parent.classList.toggle('active');
+    }
+
+    // إرسال الطلب والتوجيه لواتساب مع رسالة مفصلة
+    function handleGazaCheckout(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('userName').value.trim();
+      const phone = document.getElementById('userPhone').value.trim();
+      const region = document.getElementById('userRegion').value;
+      const address = document.getElementById('userAddress').value.trim();
+      const total = state.price + state.shipping;
+
+      if (!name || !phone || !region || !address) {
+        return;
+      }
+
+      // رسالة منسقة لواتساب
+      const waMsg = 
+        `🌸 *طلب جديد - سيروم إكسير الورد الملكي* 🌸%0A%0A` +
+        `👤 *الاسم:* ${encodeURIComponent(name)}%0A` +
+        `📱 *رقم التواصل:* ${encodeURIComponent(phone)}%0A` +
+        `📦 *الباقة:* ${encodeURIComponent(state.title)}%0A` +
+        `📍 *المحافظة:* ${encodeURIComponent(region)}%0A` +
+        `🏠 *العنوان:* ${encodeURIComponent(address)}%0A` +
+        `💰 *المجموع عند الاستلام:* ${total} شيكل (₪)%0A%0A` +
+        `✅ *ملاحظة:* الدفع عند الاستلام بعد المعاينة والفحص الكامل مع المندوب.`;
+
+      const businessNumber = "970590000000"; // رقم المتجر
+      const waUrl = `https://wa.me/${businessNumber}?text=${waMsg}`;
+
+      const btn = document.getElementById('submitOrderBtn');
+      btn.textContent = 'جاري التوجيه إلى واتساب لتأكيد الشحن...';
+      btn.style.background = '#25D366';
+
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+        btn.textContent = 'تم إرسال الطلب بنجاح! شكراً لكِ 🌸';
+      }, 600);
+    }
+
+    // التهيئة المبدئية عند التحميل
+    window.onload = function() {
+      renderInvoice();
+    };
+  </script>
+</body>
+</html>
